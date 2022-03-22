@@ -1,6 +1,5 @@
 # Deep Hyperspectral-Depth Reconstruction Using Single Color-Dot Projection
 This is the official repo for the implementation of the **dataset generateion part** of the CVPR2022 paper: Deep Hyperspectral-Depth Reconstruction Using Single Color-Dot Projection.
-As the implementation of the method, we will release in the near future.
 
 ## Introduction
 Since it is difficult to simultaneously acquire accurate depth and spectral reflectance as a large-scale ground-truth dataset in real-world situations,
