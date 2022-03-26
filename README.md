@@ -24,6 +24,10 @@ Then the data can be generated and saved to `DATA_ROOT` in `config.json` by runn
 python create_syn_data.py
 ```
 
+### Example
+The generated dataset example including 8448 scenes which used to training our model can be download from [here](https://www.dropbox.com/sh/o8r0sv7vdcitqpd/AAA3TXbXMxdTfBfT1RNbkvBxa?dl=0).
+
+
 ## Acknowledgement
 The code structure and some code snippets (rasterisation, shading, etc.) are borrowed from [Connecting the Dots](https://github.com/autonomousvision/connecting_the_dots).
 Thanks for this great project.
