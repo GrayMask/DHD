@@ -2,7 +2,10 @@
 This is the official repo for the implementation of the **dataset generateion part** of the CVPR2022 paper: Deep Hyperspectral-Depth Reconstruction Using Single Color-Dot Projection.
 
 ## Introduction
-![example](static/dataset.png)
+<div align="center">
+<img src=static/dataset.png width=60% />
+</div>
+
 Since it is difficult to simultaneously acquire accurate depth and spectral reflectance as a large-scale ground-truth dataset in real-world situations,
 we developed a spectral renderer to generate a synthetic dataset with rendered RGB color-dot images, ground-truth disparity maps,
 and ground-truth spectral reflectance images by extending the algorithm of a [structured-light renderer](https://github.com/autonomousvision/connecting_the_dots).
