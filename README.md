@@ -29,7 +29,7 @@ python create_syn_data.py
 ```
 
 ### Example
-The generated dataset example including 8448 scenes which used to training our model can be download from [here](https://www.dropbox.com/sh/o8r0sv7vdcitqpd/AAA3TXbXMxdTfBfT1RNbkvBxa?dl=0).
+The generated dataset example including 8448 scenes for training (458.6GB) and 256 scenes for testing (13.9GB) can be downloaded [here](https://www.dropbox.com/sh/o8r0sv7vdcitqpd/AAA3TXbXMxdTfBfT1RNbkvBxa?dl=0).
 
 
 ## Acknowledgement
