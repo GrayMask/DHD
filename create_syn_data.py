@@ -261,7 +261,7 @@ if __name__=='__main__':
   np.random.seed(42)
   
   # output directory
-  with open('../config.json') as fp:
+  with open('../para/config.json') as fp:
    config = json.load(fp)
    data_root = Path(config['DATA_ROOT'])
    shapenet_root = config['SHAPENET_ROOT']
@@ -278,7 +278,7 @@ if __name__=='__main__':
   # camera parameters
   imsize = (480, 640)
   imsizes = [(imsize[0]//(2**s), imsize[1]//(2**s)) for s in range(4)]
-  with open(str('./campara.pkl'), 'rb') as f:
+  with open(str('../para/campara.pkl'), 'rb') as f:
       campara = pickle.load(f)
   K = campara['K']
   baseline = campara['baseline']
@@ -294,20 +294,19 @@ if __name__=='__main__':
   track_length = 1#4
   
   # load pattern image
-  pattern_path = './pattern_croped.png'
+  pattern_path = '../para/pattern_croped.png'
   pattern_crop = True
   patterns = get_patterns(pattern_path, imsizes, pattern_crop)
 
   # load reflectance
-  #reflectance = np.loadtxt('./reflectance_24chart.txt', dtype=np.float32, delimiter=',')
-  reflectance = np.loadtxt('./reflectance.txt', dtype=np.float32, delimiter=',')
+  reflectance = np.loadtxt('../para/reflectance.txt', dtype=np.float32, delimiter=',')
   wavelength = reflectance.shape[1]
 
   # load camera sensitivity
-  camerasensitivity = np.loadtxt('./camerasensitivity.txt', dtype=np.float32, delimiter=',')
+  camerasensitivity = np.loadtxt('../para/camerasensitivity.txt', dtype=np.float32, delimiter=',')
 
   # load illumination
-  illumination = np.loadtxt('./illumination2.txt', dtype=np.float32, delimiter=',')
+  illumination = np.loadtxt('../para/illumination.txt', dtype=np.float32, delimiter=',')
 
   patterns_illu=[]
   for index, value in enumerate(patterns):
