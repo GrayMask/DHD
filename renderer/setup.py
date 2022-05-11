@@ -9,7 +9,7 @@ import json
 
 this_dir = os.path.dirname(__file__)
 
-with open('../paraconfig.json') as fp:
+with open('../para/config.json') as fp:
   config = json.load(fp)
 
 extra_compile_args = ['-O3', '-std=c++11']
